@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		F5C2B972290A23F3009BD5CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B971290A23F3009BD5CD /* AppDelegate.swift */; };
-		F5C2B974290A23F3009BD5CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B973290A23F3009BD5CD /* SceneDelegate.swift */; };
-		F5C2B976290A23F3009BD5CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B975290A23F3009BD5CD /* ViewController.swift */; };
-		F5C2B979290A23F3009BD5CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B977290A23F3009BD5CD /* Main.storyboard */; };
 		F5C2B97B290A23F7009BD5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B97A290A23F7009BD5CD /* Assets.xcassets */; };
 		F5C2B97E290A23F7009BD5CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B97C290A23F7009BD5CD /* LaunchScreen.storyboard */; };
+		F5C2B98A290A25E4009BD5CD /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B988290A25E4009BD5CD /* PersonViewController.swift */; };
+		F5C2B98B290A25E4009BD5CD /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B989290A25E4009BD5CD /* PersonViewController.xib */; };
+		F5C2B98D290A2C4D009BD5CD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B98C290A2C4D009BD5CD /* CustomTextField.swift */; };
+		F5C2B98F290A2C86009BD5CD /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B98E290A2C86009BD5CD /* CustomTextField.xib */; };
+		F5C2B997290A62C3009BD5CD /* ChildrenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B995290A62C3009BD5CD /* ChildrenCell.swift */; };
+		F5C2B998290A62C3009BD5CD /* ChildrenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B996290A62C3009BD5CD /* ChildrenCell.xib */; };
+		F5C2B99B290A73F8009BD5CD /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B99A290A73F8009BD5CD /* UITableView+Extension.swift */; };
+		F5C2B99E290A7A82009BD5CD /* ChildrenHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B99D290A7A82009BD5CD /* ChildrenHeader.swift */; };
+		F5C2B9A0290A7A9B009BD5CD /* ChildrenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */; };
+		F5C2B9A2290A98A2009BD5CD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F5C2B96E290A23F3009BD5CD /* PersonalData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C2B971290A23F3009BD5CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5C2B973290A23F3009BD5CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5C2B975290A23F3009BD5CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5C2B978290A23F3009BD5CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5C2B97A290A23F7009BD5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C2B97D290A23F7009BD5CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5C2B97F290A23F7009BD5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C2B988290A25E4009BD5CD /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		F5C2B989290A25E4009BD5CD /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		F5C2B98C290A2C4D009BD5CD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F5C2B98E290A2C86009BD5CD /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		F5C2B995290A62C3009BD5CD /* ChildrenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenCell.swift; sourceTree = "<group>"; };
+		F5C2B996290A62C3009BD5CD /* ChildrenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildrenCell.xib; sourceTree = "<group>"; };
+		F5C2B99A290A73F8009BD5CD /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		F5C2B99D290A7A82009BD5CD /* ChildrenHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenHeader.swift; sourceTree = "<group>"; };
+		F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildrenHeader.xib; sourceTree = "<group>"; };
+		F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,102 @@
 		F5C2B970290A23F3009BD5CD /* PersonalData */ = {
 			isa = PBXGroup;
 			children = (
+				F5C2B985290A24A1009BD5CD /* Application */,
+				F5C2B999290A73C5009BD5CD /* Extensions */,
+				F5C2B986290A24C1009BD5CD /* Resources */,
+				F5C2B990290A3C03009BD5CD /* UIComponents */,
+				F5C2B987290A2572009BD5CD /* Modules */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		F5C2B985290A24A1009BD5CD /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				F5C2B971290A23F3009BD5CD /* AppDelegate.swift */,
-				F5C2B973290A23F3009BD5CD /* SceneDelegate.swift */,
-				F5C2B975290A23F3009BD5CD /* ViewController.swift */,
-				F5C2B977290A23F3009BD5CD /* Main.storyboard */,
-				F5C2B97A290A23F7009BD5CD /* Assets.xcassets */,
 				F5C2B97C290A23F7009BD5CD /* LaunchScreen.storyboard */,
 				F5C2B97F290A23F7009BD5CD /* Info.plist */,
 			);
-			path = PersonalData;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F5C2B986290A24C1009BD5CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B97A290A23F7009BD5CD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5C2B987290A2572009BD5CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B992290A443E009BD5CD /* Person */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F5C2B990290A3C03009BD5CD /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B9A3290A98A8009BD5CD /* CustomButton */,
+				F5C2B991290A40D5009BD5CD /* CustomTextField */,
+				F5C2B99C290A79F0009BD5CD /* ChildrenHeader */,
+				F5C2B994290A6243009BD5CD /* ChildrenCell */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F5C2B991290A40D5009BD5CD /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B98C290A2C4D009BD5CD /* CustomTextField.swift */,
+				F5C2B98E290A2C86009BD5CD /* CustomTextField.xib */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		F5C2B992290A443E009BD5CD /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B988290A25E4009BD5CD /* PersonViewController.swift */,
+				F5C2B989290A25E4009BD5CD /* PersonViewController.xib */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		F5C2B994290A6243009BD5CD /* ChildrenCell */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B995290A62C3009BD5CD /* ChildrenCell.swift */,
+				F5C2B996290A62C3009BD5CD /* ChildrenCell.xib */,
+			);
+			path = ChildrenCell;
+			sourceTree = "<group>";
+		};
+		F5C2B999290A73C5009BD5CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B99A290A73F8009BD5CD /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5C2B99C290A79F0009BD5CD /* ChildrenHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B99D290A7A82009BD5CD /* ChildrenHeader.swift */,
+				F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */,
+			);
+			path = ChildrenHeader;
+			sourceTree = "<group>";
+		};
+		F5C2B9A3290A98A8009BD5CD /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +226,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C2B98F290A2C86009BD5CD /* CustomTextField.xib in Resources */,
+				F5C2B9A0290A7A9B009BD5CD /* ChildrenHeader.xib in Resources */,
+				F5C2B98B290A25E4009BD5CD /* PersonViewController.xib in Resources */,
 				F5C2B97E290A23F7009BD5CD /* LaunchScreen.storyboard in Resources */,
 				F5C2B97B290A23F7009BD5CD /* Assets.xcassets in Resources */,
-				F5C2B979290A23F3009BD5CD /* Main.storyboard in Resources */,
+				F5C2B998290A62C3009BD5CD /* ChildrenCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +242,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C2B976290A23F3009BD5CD /* ViewController.swift in Sources */,
 				F5C2B972290A23F3009BD5CD /* AppDelegate.swift in Sources */,
-				F5C2B974290A23F3009BD5CD /* SceneDelegate.swift in Sources */,
+				F5C2B98A290A25E4009BD5CD /* PersonViewController.swift in Sources */,
+				F5C2B99B290A73F8009BD5CD /* UITableView+Extension.swift in Sources */,
+				F5C2B99E290A7A82009BD5CD /* ChildrenHeader.swift in Sources */,
+				F5C2B9A2290A98A2009BD5CD /* CustomButton.swift in Sources */,
+				F5C2B98D290A2C4D009BD5CD /* CustomTextField.swift in Sources */,
+				F5C2B997290A62C3009BD5CD /* ChildrenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5C2B977290A23F3009BD5CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5C2B978290A23F3009BD5CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5C2B97C290A23F7009BD5CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +389,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KSQQS7C6X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalData/Info.plist;
+				INFOPLIST_FILE = PersonalData/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +417,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KSQQS7C6X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalData/Info.plist;
+				INFOPLIST_FILE = PersonalData/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +432,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

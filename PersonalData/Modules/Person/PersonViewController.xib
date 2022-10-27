@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonViewController" customModule="PersonalData" customModuleProvider="target">
+            <connections>
+                <outlet property="ageView" destination="Ia2-hS-bem" id="CiZ-7Q-jW6"/>
+                <outlet property="clearButton" destination="Lcs-Lr-iRv" id="yzP-2B-y4F"/>
+                <outlet property="nameView" destination="EC2-oP-e5V" id="KKi-gu-HpS"/>
+                <outlet property="tableView" destination="A3i-xm-Ibe" id="9mH-Ec-du6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Персональные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-ki-gDf">
+                    <rect key="frame" x="16" y="60" width="382" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="s4Q-Zl-acu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G28-U6-Ydf">
+                    <rect key="frame" x="16" y="104" width="382" height="136"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-oP-e5V" customClass="CustomTextField" customModule="PersonalData" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="bEg-Ki-9E1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia2-hS-bem" customClass="CustomTextField" customModule="PersonalData" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="76" width="382" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="xNl-xM-5rj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="136" id="rKY-LE-dK6"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fg2-8X-beW" customClass="ChildrenHeader" customModule="PersonalData" customModuleProvider="target">
+                    <rect key="frame" x="16" y="248" width="382" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="81L-3f-JwF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcs-Lr-iRv" customClass="CustomButton" customModule="PersonalData" customModuleProvider="target">
+                    <rect key="frame" x="107" y="806" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="IGC-1d-ZuK"/>
+                        <constraint firstAttribute="width" constant="200" id="w4A-km-uFs"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Очистить"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A3i-xm-Ibe">
+                    <rect key="frame" x="16" y="300" width="382" height="482"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="G28-U6-Ydf" firstAttribute="top" secondItem="Siq-ki-gDf" secondAttribute="bottom" constant="24" id="20o-fJ-Gnk"/>
+                <constraint firstItem="Siq-ki-gDf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="33C-E9-3vS"/>
+                <constraint firstItem="Fg2-8X-beW" firstAttribute="top" secondItem="G28-U6-Ydf" secondAttribute="bottom" constant="8" id="58C-ku-jXB"/>
+                <constraint firstItem="G28-U6-Ydf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Bty-Gq-WDS"/>
+                <constraint firstItem="A3i-xm-Ibe" firstAttribute="top" secondItem="Fg2-8X-beW" secondAttribute="bottom" constant="8" id="Mok-In-s7K"/>
+                <constraint firstItem="Fg2-8X-beW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VBP-Dw-ONo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A3i-xm-Ibe" secondAttribute="trailing" constant="16" id="VJD-Ny-qDi"/>
+                <constraint firstItem="Lcs-Lr-iRv" firstAttribute="top" secondItem="A3i-xm-Ibe" secondAttribute="bottom" constant="24" id="WoK-Jf-Pyj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Lcs-Lr-iRv" secondAttribute="bottom" constant="16" id="X7i-dO-zM0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G28-U6-Ydf" secondAttribute="trailing" constant="16" id="azR-KP-BT9"/>
+                <constraint firstItem="A3i-xm-Ibe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="foU-yU-YyV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fg2-8X-beW" secondAttribute="trailing" constant="16" id="iZS-Zv-VlG"/>
+                <constraint firstItem="Lcs-Lr-iRv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jAx-Qn-8bY"/>
+                <constraint firstItem="Siq-ki-gDf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="ouO-dq-STM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Siq-ki-gDf" secondAttribute="trailing" constant="16" id="zyx-3x-8Yl"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
