@@ -21,6 +21,7 @@
 		F5C2B9A0290A7A9B009BD5CD /* ChildrenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */; };
 		F5C2B9A2290A98A2009BD5CD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */; };
 		F5C2B9A6290B7130009BD5CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B9A5290B7130009BD5CD /* Person.swift */; };
+		F5C2B9A8290B76D9009BD5CD /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B9A7290B76D9009BD5CD /* PersonPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildrenHeader.xib; sourceTree = "<group>"; };
 		F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F5C2B9A5290B7130009BD5CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F5C2B9A7290B76D9009BD5CD /* PersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +133,8 @@
 		F5C2B992290A443E009BD5CD /* Person */ = {
 			isa = PBXGroup;
 			children = (
-				F5C2B988290A25E4009BD5CD /* PersonViewController.swift */,
-				F5C2B989290A25E4009BD5CD /* PersonViewController.xib */,
+				F5C2B9A9290B7E54009BD5CD /* View */,
+				F5C2B9AA290B7E63009BD5CD /* Presenter */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -177,6 +179,23 @@
 				F5C2B9A5290B7130009BD5CD /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F5C2B9A9290B7E54009BD5CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B989290A25E4009BD5CD /* PersonViewController.xib */,
+				F5C2B988290A25E4009BD5CD /* PersonViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5C2B9AA290B7E63009BD5CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B9A7290B76D9009BD5CD /* PersonPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +280,7 @@
 				F5C2B98D290A2C4D009BD5CD /* CustomTextField.swift in Sources */,
 				F5C2B9A6290B7130009BD5CD /* Person.swift in Sources */,
 				F5C2B997290A62C3009BD5CD /* ChildrenCell.swift in Sources */,
+				F5C2B9A8290B76D9009BD5CD /* PersonPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

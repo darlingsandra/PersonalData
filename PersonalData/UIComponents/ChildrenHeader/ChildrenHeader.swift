@@ -11,7 +11,7 @@ final class ChildrenHeader: UIView {
     
     // MARK: - IBOutlet
     @IBOutlet var contentView: UIView!
-    @IBOutlet weak var addChildrenButton: CustomButton!
+    @IBOutlet weak var addChildButton: CustomButton!
     
     // MARK: - init
     override init(frame: CGRect) {
@@ -34,6 +34,6 @@ private extension ChildrenHeader {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-        addChildrenButton.configure(title: "Добавить ребенка", color: .systemBlue)
+        addChildButton.configure(title: "Добавить ребенка", color: .systemBlue)
     }
 }

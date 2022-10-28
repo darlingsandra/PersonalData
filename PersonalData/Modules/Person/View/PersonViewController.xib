@@ -12,7 +12,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonViewController" customModule="PersonalData" customModuleProvider="target">
             <connections>
                 <outlet property="ageView" destination="Ia2-hS-bem" id="CiZ-7Q-jW6"/>
+                <outlet property="bottomConstraint" destination="X7i-dO-zM0" id="jQD-wm-B1F"/>
                 <outlet property="clearButton" destination="Lcs-Lr-iRv" id="yzP-2B-y4F"/>
+                <outlet property="headerView" destination="Fg2-8X-beW" id="0Lm-B2-556"/>
                 <outlet property="nameView" destination="EC2-oP-e5V" id="KKi-gu-HpS"/>
                 <outlet property="tableView" destination="A3i-xm-Ibe" id="9mH-Ec-du6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
