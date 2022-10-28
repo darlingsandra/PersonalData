@@ -20,6 +20,7 @@
 		F5C2B99E290A7A82009BD5CD /* ChildrenHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B99D290A7A82009BD5CD /* ChildrenHeader.swift */; };
 		F5C2B9A0290A7A9B009BD5CD /* ChildrenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */; };
 		F5C2B9A2290A98A2009BD5CD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */; };
+		F5C2B9A6290B7130009BD5CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B9A5290B7130009BD5CD /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F5C2B99D290A7A82009BD5CD /* ChildrenHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenHeader.swift; sourceTree = "<group>"; };
 		F5C2B99F290A7A9B009BD5CD /* ChildrenHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildrenHeader.xib; sourceTree = "<group>"; };
 		F5C2B9A1290A98A2009BD5CD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F5C2B9A5290B7130009BD5CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F5C2B999290A73C5009BD5CD /* Extensions */,
 				F5C2B986290A24C1009BD5CD /* Resources */,
 				F5C2B990290A3C03009BD5CD /* UIComponents */,
+				F5C2B9A4290B70FC009BD5CD /* Models */,
 				F5C2B987290A2572009BD5CD /* Modules */,
 			);
 			path = PersonalData;
@@ -168,6 +171,14 @@
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
+		F5C2B9A4290B70FC009BD5CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5C2B9A5290B7130009BD5CD /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +259,7 @@
 				F5C2B99E290A7A82009BD5CD /* ChildrenHeader.swift in Sources */,
 				F5C2B9A2290A98A2009BD5CD /* CustomButton.swift in Sources */,
 				F5C2B98D290A2C4D009BD5CD /* CustomTextField.swift in Sources */,
+				F5C2B9A6290B7130009BD5CD /* Person.swift in Sources */,
 				F5C2B997290A62C3009BD5CD /* ChildrenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
