@@ -37,8 +37,6 @@ final class ChildrenCell: UITableViewCell {
     }
     
     @objc func deleteButtonTapped(_ sender: UIButton) {
-//        nameView.textField.endEditing(true)
-//        ageView.textField.endEditing(true)
         delegate?.childDeleted(id)
     }
 }

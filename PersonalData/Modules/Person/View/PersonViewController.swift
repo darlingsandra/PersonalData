@@ -19,11 +19,21 @@ final class PersonViewController: UIViewController {
     @IBOutlet weak var clearButton: CustomButton!
     @IBOutlet weak var headerView: ChildrenHeader!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var bottomClearButtonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var heightTopViewConstraint: NSLayoutConstraint!
     
     var presenter: PersonPresenterProtocol!
     
     private let maxChild = 5
+    private let mainSpacer: CGFloat = 16.0
+    private var focusTextField: UITextField?
+    
+    private var isFocusTopView: Bool {
+        get {
+            (focusTextField == nameView.textField || focusTextField == ageView.textField)
+        }
+    }
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -31,6 +41,16 @@ final class PersonViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         configureView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        subscribeToKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        unsubscribeFromKeyboardNotifications()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,11 +93,17 @@ final class PersonViewController: UIViewController {
               let keybourdFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
             else { return }
         if notification.name == UIResponder.keyboardWillHideNotification {
-            bottomConstraint.constant = 16
+            bottomClearButtonConstraint.constant = mainSpacer
+            if !isFocusTopView {
+                view.frame.origin.y = 0
+            }
         }
         
         if notification.name == UIResponder.keyboardWillShowNotification  {
-            bottomConstraint.constant = keybourdFrame.height
+            if !isFocusTopView {
+                bottomClearButtonConstraint.constant = keybourdFrame.height + mainSpacer - heightTopViewConstraint.constant
+                view.frame.origin.y = -heightTopViewConstraint.constant
+            }
         }
     }
     
@@ -104,13 +130,24 @@ extension PersonViewController: UITableViewDataSource {
         if tableView.numberOfRows(inSection: indexPath.section) - 1 == indexPath.row {
             cell.separatorInset = .zero
         }
+        
         cell.delegate = self
+        cell.nameView.textField.delegate = self
+        cell.ageView.textField.delegate = self
+        
         cell.configure(
             presenter.getIDChild(index: indexPath.row),
             name: presenter.getNameChild(index: indexPath.row),
             age: presenter.getAgeChild(index: indexPath.row)
         )
         return cell
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension PersonViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        focusTextField = textField
     }
 }
 
@@ -147,13 +184,22 @@ private extension PersonViewController {
         tableView.registerCell(ofType: ChildrenCell.self)
         clearButton.configure(title: "Очистить", color: .red)
         
+        nameView.textField.delegate = self
+        ageView.textField.delegate = self
+        
         nameView.textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingDidEnd)
         ageView.textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingDidEnd)
         clearButton.addTarget(self, action: #selector(clearButtonTapped(_:)), for: .touchDown)
         headerView.addChildButton.addTarget(self, action: #selector(addChildButtonTapped(_:)), for: .touchDown)
         
         ageView.textField.keyboardType = .asciiCapableNumberPad
-        
+    }
+    
+    func setVisibleAddChild() {
+        self.headerView.addChildButton.isEnabled = !(self.presenter.getCountChild() >= self.maxChild)
+    }
+    
+    func subscribeToKeyboardNotifications() {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(updatePositionView(notification:)),
@@ -168,7 +214,8 @@ private extension PersonViewController {
         )
     }
     
-    func setVisibleAddChild() {
-        self.headerView.addChildButton.isEnabled = !(self.presenter.getCountChild() >= self.maxChild)
+    func unsubscribeFromKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 }
