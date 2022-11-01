@@ -1,5 +1,7 @@
 # PersonalData
 
+Экран позволяющий заполнить информацию о себе и своих детях реализованный на архитектуре MVP.
+
 <p align="center">
  <img src="https://user-images.githubusercontent.com/61318296/198945579-cdb06a62-2281-42f9-8d40-457fee5095ef.png" width="300" height="550">
  <img src="https://user-images.githubusercontent.com/61318296/198945370-7f935d52-89c5-4e65-a720-5c090e1fa474.png" width="300" height="550">
