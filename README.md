@@ -3,7 +3,9 @@
 Экран позволяющий заполнить информацию о себе и своих детях реализованный на архитектуре MVP.
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/61318296/198945579-cdb06a62-2281-42f9-8d40-457fee5095ef.png" width="300" height="550">
+ <img src="https://user-images.githubusercontent.com/61318296/198945579-cdb06a62-2281-42f9-8d40-457fee5095ef.png" width="300" height="550"> 
+ <img src="https://user-images.githubusercontent.com/61318296/203006513-744bf0f7-eea3-498e-b46b-83cc238554bb.png" width="300" height="550">
+ <img src="https://user-images.githubusercontent.com/61318296/203006524-b1ab713b-f78c-4a05-8fd7-13cbeccda688.png" width="300" height="550">  
  <img src="https://user-images.githubusercontent.com/61318296/198945370-7f935d52-89c5-4e65-a720-5c090e1fa474.png" width="300" height="550">
  <img src="https://user-images.githubusercontent.com/61318296/198945383-f1996bb0-cd96-4c47-a41f-b5e66fa5b3c3.png" width="300" height="550">
  <img src="https://user-images.githubusercontent.com/61318296/198947855-29163587-22a3-4dec-a149-3add2db19cce.png" width="300" height="550">
