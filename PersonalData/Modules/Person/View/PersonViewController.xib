@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +27,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-1t-HZ5">
-                    <rect key="frame" x="16" y="64" width="382" height="180"/>
+                    <rect key="frame" x="16" y="64" width="382" height="200"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Персональные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-ki-gDf">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
@@ -38,32 +38,32 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G28-U6-Ydf">
-                            <rect key="frame" x="0.0" y="44" width="382" height="136"/>
+                            <rect key="frame" x="0.0" y="44" width="382" height="156"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-oP-e5V" customClass="CustomTextField" customModule="PersonalData" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="bEg-Ki-9E1"/>
+                                        <constraint firstAttribute="height" constant="70" id="bEg-Ki-9E1"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia2-hS-bem" customClass="CustomTextField" customModule="PersonalData" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="76" width="382" height="60"/>
+                                    <rect key="frame" x="0.0" y="86" width="382" height="70"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="xNl-xM-5rj"/>
+                                        <constraint firstAttribute="height" constant="70" id="xNl-xM-5rj"/>
                                     </constraints>
                                 </view>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="136" id="rKY-LE-dK6"/>
+                                <constraint firstAttribute="height" constant="156" id="rKY-LE-dK6"/>
                             </constraints>
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="180" id="Qn6-fg-i9W"/>
+                        <constraint firstAttribute="height" constant="200" id="Qn6-fg-i9W"/>
                     </constraints>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fg2-8X-beW" customClass="ChildrenHeader" customModule="PersonalData" customModuleProvider="target">
-                    <rect key="frame" x="16" y="252" width="382" height="44"/>
+                    <rect key="frame" x="16" y="272" width="382" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="81L-3f-JwF"/>
                     </constraints>
@@ -78,7 +78,7 @@
                     <buttonConfiguration key="configuration" style="plain" title="Очистить"/>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A3i-xm-Ibe">
-                    <rect key="frame" x="16" y="304" width="382" height="478"/>
+                    <rect key="frame" x="16" y="324" width="382" height="458"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>

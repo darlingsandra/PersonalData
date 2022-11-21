@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5007A46292B5E21006D2AAB /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007A45292B5E21006D2AAB /* Validation.swift */; };
 		F5C2B972290A23F3009BD5CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2B971290A23F3009BD5CD /* AppDelegate.swift */; };
 		F5C2B97B290A23F7009BD5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B97A290A23F7009BD5CD /* Assets.xcassets */; };
 		F5C2B97E290A23F7009BD5CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C2B97C290A23F7009BD5CD /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5007A45292B5E21006D2AAB /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		F5C2B96E290A23F3009BD5CD /* PersonalData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C2B971290A23F3009BD5CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C2B97A290A23F7009BD5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5007A44292B5DB5006D2AAB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5007A45292B5E21006D2AAB /* Validation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F5C2B965290A23F3009BD5CD = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				F5C2B985290A24A1009BD5CD /* Application */,
 				F5C2B999290A73C5009BD5CD /* Extensions */,
 				F5C2B986290A24C1009BD5CD /* Resources */,
+				F5007A44292B5DB5006D2AAB /* Helpers */,
 				F5C2B990290A3C03009BD5CD /* UIComponents */,
 				F5C2B9A4290B70FC009BD5CD /* Models */,
 				F5C2B987290A2572009BD5CD /* Modules */,
@@ -280,6 +291,7 @@
 				F5C2B98D290A2C4D009BD5CD /* CustomTextField.swift in Sources */,
 				F5C2B9A6290B7130009BD5CD /* Person.swift in Sources */,
 				F5C2B997290A62C3009BD5CD /* ChildrenCell.swift in Sources */,
+				F5007A46292B5E21006D2AAB /* Validation.swift in Sources */,
 				F5C2B9A8290B76D9009BD5CD /* PersonPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

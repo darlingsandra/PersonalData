@@ -58,10 +58,10 @@ final class PersonViewController: UIViewController {
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        if textField == nameView.textField, let name = textField.text {
+        if textField == nameView.textField, nameView.isValid(), let name = textField.text {
             presenter.personNameChanged(name)
         }
-        if textField == ageView.textField, let age = textField.text {
+        if textField == ageView.textField, ageView.isValid(), let age = textField.text {
             presenter.personAgeChanged(age)
         }
     }
@@ -186,13 +186,12 @@ private extension PersonViewController {
         
         nameView.textField.delegate = self
         ageView.textField.delegate = self
+        ageView.validateType = .adultAge
         
         nameView.textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingDidEnd)
         ageView.textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingDidEnd)
         clearButton.addTarget(self, action: #selector(clearButtonTapped(_:)), for: .touchDown)
         headerView.addChildButton.addTarget(self, action: #selector(addChildButtonTapped(_:)), for: .touchDown)
-        
-        ageView.textField.keyboardType = .asciiCapableNumberPad
     }
     
     func setVisibleAddChild() {

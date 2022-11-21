@@ -28,10 +28,10 @@ final class ChildrenCell: UITableViewCell {
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        if textField == nameView.textField, let value = textField.text {
+        if textField == nameView.textField, nameView.isValid(), let value = textField.text {
             delegate?.childNameChanged(id, value: value)
         }
-        if textField == ageView.textField, let value = textField.text {
+        if textField == ageView.textField, ageView.isValid(), let value = textField.text {
             delegate?.childAgeChanged(id, value: value)
         }
     }
@@ -47,9 +47,11 @@ extension ChildrenCell {
         
         nameView.placeHolder.text = "Имя"
         ageView.placeHolder.text = "Возраст"
+        ageView.textValidation.text = nil
         
         nameView.textField.text = name
         ageView.textField.text = age
+        ageView.validateType = .kidAge
     
         selectionStyle = .none
         
@@ -57,7 +59,5 @@ extension ChildrenCell {
         ageView.textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingDidEnd)
         
         deleteButton.addTarget(self, action: #selector(deleteButtonTapped(_:)), for: .touchDown)
-        
-        ageView.textField.keyboardType = .asciiCapableNumberPad
     }
 }
