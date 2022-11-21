@@ -192,6 +192,8 @@ private extension PersonViewController {
         ageView.textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingDidEnd)
         clearButton.addTarget(self, action: #selector(clearButtonTapped(_:)), for: .touchDown)
         headerView.addChildButton.addTarget(self, action: #selector(addChildButtonTapped(_:)), for: .touchDown)
+        
+        tableView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
     
     func setVisibleAddChild() {
